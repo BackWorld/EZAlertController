@@ -1,18 +1,18 @@
 #EZAlertController
 
 
-#####0、 暂时只支持 UIAlertControllerStyleAlert
+###0、 暂时只支持 UIAlertControllerStyleAlert
 
 > 先来个最终效果图，看合您的口味和需求，再接着往下看
 
 ![默认情况下](http://upload-images.jianshu.io/upload_images/1334681-5c180c4fbc68b02e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ----只是把系统的圆角给弄没了，可以设置** alert.showRoundCorner = true **显示出来
 
-#####1、 自定义样式效果图
+###1、 自定义样式效果图
 
 ![可以设置背景图/色](http://upload-images.jianshu.io/upload_images/1334681-9b436397b4c750d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#####2、 看到这，相信你已经有些兴趣了，就再看看用法：
+###2、 看到这，相信你已经有些兴趣了，就再看看用法：
 
 ```
 // 创建对话框
@@ -70,7 +70,7 @@
 // 显示对话框
     [alert presentWithAnimated:true completion:nil];
 ```
-#####3、 基于UIAlertController的封装，其实是变相“改造”
+###3、 基于UIAlertController的封装，其实是变相“改造”
 
 > 如果你想更进一步“改造”，不妨先弄清楚它原始的结构
 
@@ -82,7 +82,7 @@
 
 > 我是结合了2种方式，些许私有API + controller封装，然后“改造”里边的view样式，这样就不会过多设计私有API而是直接作用于UIView，自然起到了“自定义”的功效
 
-#####4、 我简单打印拆分的UIViewController - Alert的层级结构
+###4、 我简单打印拆分的UIViewController - Alert的层级结构
 
 ```
 s _UIAlertControllerView
@@ -124,11 +124,11 @@ s1 0 UIView
                         s6 2 UIImageView
 ```
 
-##### 5、简单易用，与UIAlertController无异
+### 5、简单易用，与UIAlertController无异
 
 ![拖进去](http://upload-images.jianshu.io/upload_images/1334681-570143d1c39663a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 > github: https://github.com/BackWorld/EZAlertController
 
-##### 6、如对你有些许帮助，别忘了👍一下
+### 6、如对你有些许帮助，别忘了⭐️一下哦
 
