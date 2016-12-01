@@ -128,7 +128,7 @@ s1 0 UIView
 
 ![拖进去](http://upload-images.jianshu.io/upload_images/1334681-570143d1c39663a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> github: https://github.com/BackWorld/EZAlertController
+> 简书: http://www.jianshu.com/p/74fdd17209fd
 
 ### 6、如对你有些许帮助，别忘了⭐️一下哦
 
