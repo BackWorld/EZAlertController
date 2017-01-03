@@ -229,8 +229,11 @@
         [_alert becomeFirstResponder];
         
         _backdropView = view.subviews[0]; //s2-0
-        _effectView = _backdropView.subviews[1];
-        _effectView.effect = nil;
+        UIView *v = _backdropView.subviews[1];
+        if (v && [v isMemberOfClass:[UIVisualEffectView class]]) {
+            _effectView = (UIVisualEffectView *)v;
+            _effectView.effect = _showBlurEffect ? _effectView.effect : nil;
+        }
         
         UIView *scrollView = view.subviews[1].subviews[0].subviews[0]; //s2-1 s3-0 s4-0
         
